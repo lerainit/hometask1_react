@@ -7,13 +7,14 @@ import './modal.scss';
 class Modal extends PureComponent{
   
     render(){
-  const {actions,text,header,handleClick,backgroundColor,color,closeButton}  = this.props 
+  const {actions,text,header,handleClick,backgroundColor,color,closeButton,}  = this.props 
 
 return(
 <>
 
-<div className='modal' >
-  <div className='modal_main_container' style={{backgroundColor,color}} text ={text} header={header} handleClick={handleClick} >
+<div className='modal'  >
+  <div className='outer_container'  onClick={handleClick} ></div>
+  <div className='modal_main_container' style={{backgroundColor,color}}  text ={text} header={header} >
  
  <div className='header_container'><h2>{header}</h2>
  { closeButton && <button className='close_btn' onClick={handleClick}>X</button>}</div> 

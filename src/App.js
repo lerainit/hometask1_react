@@ -53,7 +53,7 @@ return(
     
 </div>
 { isOpenModal &&
-<Modal color ={color} backgroundColor ={backgroundColor} actions = {actions} text={text} header={header} handleClick={()=>{this.setState({isOpenModal:false})}} closeButton={closeButton}>
+<Modal color ={color} backgroundColor ={backgroundColor} actions = {actions} text={text} header={header} handleClick={()=>{this.setState({isOpenModal:false})}} closeButton={closeButton} >
 
 
 </Modal>
